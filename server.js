@@ -3,7 +3,15 @@ var express = require('express'),
     mongoose = require('mongoose'),
     bodyParser = require('body-parser');
 
-mongoose.connect('mongodb://localhost/order');
+
+app.configure('development', function() {
+     mongoose.connect('mongodb://localhost/order');
+});
+
+app.configure('production', function() {
+    mongoose.connect('mongodb://<dbuser>:<dbpassword>@ds029605.mongolab.com:29605/orderkopkap');
+});
+
 
 var Schema = new mongoose.Schema({
     table: Number,
