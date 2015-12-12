@@ -9,7 +9,7 @@ app.configure('development', function() {
 });
 
 app.configure('production', function() {
-    mongoose.connect('mongodb://<dbuser>:<dbpassword>@ds029605.mongolab.com:29605/orderkopkap');
+    mongoose.connect('mongodb://heroku_j1lnf1d2:u2e62526p575cvd0uv79odjlqn@ds029595.mongolab.com:29595/heroku_j1lnf1d2');
 });
 
 
