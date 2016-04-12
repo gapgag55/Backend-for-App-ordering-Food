@@ -1,1 +1,1 @@
-# Backend for ordering food app. Made by AngularJS
+Backend for ordering food app. Made by AngularJS
